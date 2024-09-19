@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eco Innovators</title>
+  <title>ECO INNOVATORS</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -35,9 +35,36 @@
       border: none;
     }
 
+    .responsive-text {
+      font-size: 18px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
     @media only screen and (max-width: 600px) {
       .container {
         padding: 10px;
+      }
+
+      .responsive-text {
+        font-size: 16px;
+      }
+
+      .image-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -47,14 +74,28 @@
 
   <div class="container">
     <h1><marquee>Eco Innovators Project Demo Explanation</marquee></h1>
+    
     <div class="video-container">
-      
       <video controls>
         <source src="1.mp4" type="video/mp4">
-
       </video>
+    </div>
+
+    <div class="responsive-text">
+      <p>This project demonstrates our innovative approach to eco-friendly solutions for a sustainable future.</p><br>
+      <center>
+        <h3> BASIC UI</h3>
+      </center>
+    </div>
+
+    <div class="image-grid">
+      <img src="image1.jpg" alt="Eco Innovation 1">
+      <img src="image2.jpg" alt="Eco Innovation 2">
+      <img src="image3.jpg" alt="Eco Innovation 3">
+      <img src="image4.jpg" alt="Eco Innovation 4">
     </div>
   </div>
 
 </body>
 </html>
+

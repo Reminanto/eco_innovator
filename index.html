@@ -54,6 +54,18 @@
       border-radius: 8px;
     }
 
+    .centered-image {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .centered-image img {
+      width: 100%;
+      max-width: 500px; /* Limits the size on larger screens */
+      height: auto;
+      border-radius: 8px;
+    }
+
     @media only screen and (max-width: 600px) {
       .container {
         padding: 10px;
@@ -73,7 +85,7 @@
 <body>
 
   <div class="container">
-    <h1><center>ECO INNOVATORS PROJECT DEMO EXPLANATION </center></h1>
+    <h1><center>ECO INNOVATORS PROJECT DEMO EXPLANATION</center></h1>
     
     <div class="video-container">
       <video controls>
@@ -84,19 +96,20 @@
     <div class="responsive-text">
       <h5>This project demonstrates our innovative approach to eco-friendly solutions for a sustainable future.</h5><br>
       <center>
-        <h2> DEMO IMPLEMENTATION</h2>
-     <center>
+        <h2>DEMO IMPLEMENTATION</h2>
+      </center>
     </div>
 
     <div class="image-grid">
       <img src="image1.jpg" alt="Eco Innovation 1">
-      <img src="image2.jpg" alt="Eco Innovation 2"><br>
-    
-    
+      <img src="image2.jpg" alt="Eco Innovation 2">
     </div>
-       <div>   <img src="image3.jpg" alt="Eco Innovation 3"> </div>
+    
+    <div class="centered-image">
+      <img src="image3.jpg" alt="Eco Innovation 3">
+    </div>
+
   </div>
 
 </body>
 </html>
-
